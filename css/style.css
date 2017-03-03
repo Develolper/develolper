@@ -1,0 +1,49 @@
+body {
+    padding: 20px;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+/*custom fonts*/
+@font-face {
+    font-family: 'GothamPro-light';
+    src: url('../fonts/gotham-light.ttf');
+}
+
+@font-face {
+    font-family: 'GothaPro-Bold';
+    src: url('../fonts/GothaProBol.otf');
+}
+
+@font-face {
+    font-family: 'RBNo2Light';
+    src: url('../fonts/RBNo2Light.otf');
+}
+
+@font-face {
+    font-family: 'RBNo2Light_a';
+    src: url('../fonts/RBNo2Light_a.otf');
+}
+
+
+img.logo {
+    width: 200px;
+}
+
+
+.headline {
+    font-family: "GothamPro-light";
+    font-size: 2.1em;
+}
+
+.headline_bold_fragment {
+    font-family: "GothaPro-Bold";
+}
+
+
+.top-buffer {
+    margin-top:20px;
+    height: 50px;
+}
