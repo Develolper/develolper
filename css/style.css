@@ -1,9 +1,9 @@
 body {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .container {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 /*custom fonts*/
@@ -30,12 +30,22 @@ body {
 
 img.logo {
     width: 200px;
+    margin-right: 50px;
+}
+
+img.icon {
+    width: 100px;
 }
 
 
+#contactEmail {
+    float: none!important;
+    padding-top: 20px;
+}
+
 .headline {
     font-family: "GothamPro-light";
-    font-size: 2.1em;
+    font-size: 2.8em;
 }
 
 .headline_bold_fragment {
@@ -43,7 +53,63 @@ img.logo {
 }
 
 
+/*space between head and headline*/
 .top-buffer {
     margin-top:20px;
     height: 50px;
+}
+
+
+
+.big_slogan_dvider {
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #ddd;
+}
+
+.usp_boxes {
+    /*border: 1px solid #aaa;*/
+}
+
+
+.usp_boxes h5 {
+    color: #000000;
+    letter-spacing: -1px;
+    margin: 0 0 10px 0
+}
+
+
+.usp_boxes img {
+    margin: 15px 0;
+    width: 65px;
+}
+
+.usp_boxes p {
+    color: #3b3a36;
+    margin: 0 0 10px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/2.jpg");
+
+    /* Set a specific height */
+    height: 200px;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
