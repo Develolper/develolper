@@ -53,6 +53,11 @@ img.icon {
 }
 
 
+h3 strong {
+    color: #4abdac;
+}
+
+
 /*space between head and headline*/
 .top-buffer {
     margin-top:20px;
