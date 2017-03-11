@@ -143,7 +143,7 @@ h3 strong {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #4ABDAC;
 }
 
 .overlay2 {
@@ -156,7 +156,7 @@ h3 strong {
  width: 100%;
  opacity: 0;
  transition: .5s ease;
- background-color: #008CBA;
+ background-color: #4ABDAC;
 }
 
 .overlay3 {
@@ -169,7 +169,7 @@ h3 strong {
  width: 100%;
  opacity: 0;
  transition: .5s ease;
- background-color: #008CBA;
+ background-color: #4ABDAC;
 }
 
 .overlay4 {
@@ -182,7 +182,7 @@ h3 strong {
  width: 100%;
  opacity: 0;
  transition: .5s ease;
- background-color: #008CBA;
+ background-color: #4ABDAC;
 }
 
 .what_we_done_unit:hover .overlay1 {
@@ -209,4 +209,125 @@ h3 strong {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+.team_member {
+    background: #fff;
+    margin: 1rem;
+    position: relative;
+    min-height: 260px;
+}
+.team_member .name {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.overlayQurban {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.overlayElchin {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.overlaySabir {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.overlaySatter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.overlayHasan {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.overlayAbbas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.team_member_picture:hover .overlaySatter {
+  opacity: 0.9;
+}
+.team_member_picture:hover .overlayAbbas {
+  opacity: 0.9;
+}
+.team_member_picture:hover .overlayHasan {
+  opacity: 0.9;
+}
+.team_member_picture:hover .overlaySabir {
+  opacity: 0.9;
+}
+.team_member_picture:hover .overlayQurban {
+  opacity: 0.9;
+}
+.team_member_picture:hover .overlayElchin {
+  opacity: 0.9;
+}
+
+
+.col-md-3 img {
+    width: 100%;
+}
+
+
+.team_member {
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.08), 2px 2px 2px rgba(0,0,0,0.16);
 }
