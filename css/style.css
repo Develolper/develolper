@@ -1,5 +1,6 @@
 body {
     padding: 20px 0;
+    display: grid;
 }
 
 a {
@@ -133,17 +134,13 @@ h3 strong {
 
 }
 
-.what_we_done_unit a{
-    color: #fff;
-}
+
 
 .what_we_done_unit img {
     width: 100%;
 }
 
-.what_we_done_unit a:hover {
-    color: #fff;
-}
+
 
  .overlayBrandName {
   position: absolute;
@@ -158,14 +155,28 @@ h3 strong {
   background-color: #4ABDAC;
 }
 
+.overlayBrandName a{
+    color: #fff;
+}
 
+.overlayBrandName a:hover {
+    color: #fff;
+}
 
 .what_we_done_unit:hover .overlayBrandName {
   opacity: 1;
 }
 
 
-
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 
 
 
@@ -210,4 +221,15 @@ h3 strong {
 
 .team_member_picture img {
     width: 100%;
+}
+
+
+
+.contactsBig {
+    font-size: 40px;
+}
+
+
+.contactsBig strong {
+    color: #4ABDAC;
 }
