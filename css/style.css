@@ -1,5 +1,5 @@
 body {
-    padding: 20px 0;
+    padding: 0;
     display: grid;
 }
 
@@ -12,13 +12,34 @@ a {
     /*border: 1px solid black;*/
 }
 
+.pattern {
+    background-image:url(../images/pattern_double_black.png);
+    background-repeat: repeat;
+    background-attachment:scroll;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0
+}
+
 .navbar {
-    background-color:rgba(255,255,255,1);
+    /*background-color:rgba(255,255,255,0);*/
+    background: none;
 }
 
 .navbar.blur {
-    background-color:rgba(65,65,65,0.5);
+    background-color: rgba(255,255,255,1);
 }
+
+#whiteLink {
+    color: #fff;
+}
+
+#blackLink {
+    color: #555;
+}
+
 
 /*custom fonts*/
 @font-face {
@@ -37,13 +58,15 @@ a {
 }
 
 @font-face {
-    font-family: 'RBNo2Light_a';
-    src: url('../fonts/RBNo2Light_a.otf');
+    font-family: 'Variane_Script';
+    src: url('../fonts/Variane_Script.ttf');
 }
 
 
+
+
 img.logo {
-    width: 150px;
+    width: 200px;
     margin-right: 50px;
 }
 
@@ -60,6 +83,18 @@ img.icon {
 .headline {
     font-family: "GothamPro-light";
     font-size: 2.8em;
+    color: #fff;
+}
+
+
+.sub-headline {
+    font-family: "GothamPro-light";
+    font-size: 2.4em;
+    color: #fff;
+}
+
+.sub-headline .style {
+    font-family: "Variane_Script";
 }
 
 .headline_bold_fragment {
@@ -259,61 +294,27 @@ h3 strong {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*homepage-hero-module*/
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-.video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
+.one {
     width: 100%;
+    height: 100vh;
     overflow: hidden;
-    background: #000;
+    /*margin-bottom: 40px;*/
+    position: relative;
 }
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
+
+.two{
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    border: 15px solid blue;
+    position: relative;
+}
+
+.video-background { /* class name used in javascript too */
+    width: 100%; /* width needs to be set to 100% */
+    height: 100%; /* height needs to be set to 100% */
     position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-}
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
