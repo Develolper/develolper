@@ -119,7 +119,7 @@ $(function () {
 
 
 
-
+// adjusting image to it's parent element by it's scale
 (function() {
 
 var img = document.getElementsByClassName('what_we_done_unit');
@@ -131,3 +131,23 @@ img.onload = function() {
 };
 
 }());
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    Typed.new('.element', {
+        strings: ["Optimized solutions", "Digital ideas" ],
+        typeSpeed: 50,
+        backSpeed: 5
+    });
+});
