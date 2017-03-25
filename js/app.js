@@ -39,6 +39,7 @@ $(document).scroll(function(e){
 
     if(scrollTop > screenHeight){
 
+        $(".arrow").attr("style","display: none");
 
         $(".logo").attr("src","images/commentLogo.png");
 
@@ -47,6 +48,7 @@ $(document).scroll(function(e){
         $(".nav-link").attr("id", "blackLink");
 
     } else {
+        $(".arrow").attr("style","display: block");
         $(".logo").attr("src","images/whiteLogo.png");
         $('.navbar').removeClass('blur');
         $(".nav-link").attr("id","whiteLink");
@@ -57,6 +59,22 @@ $(document).scroll(function(e){
 
 
 
+// auto changing bg videos after 12 seconds
+window.onload = function start() {
+    slide();
+}
+
+function slide() {
+    var num = 0 ;
+    var videoSrc = [
+        'video/quality_excellence/For_Wes.mp4', 'video/idea/pencil_down.mp4', 'video/1/Dancing-Bulbs.mp4', 'video/quality_excellence/Undo.mp4'
+    ]
+    window.setInterval(function () {
+        // increase by num 1, reset to 0 at 4
+        num = (num + 1) % 4;
+        $('video').attr('src', videoSrc[num]);
+    }, 12000); // repeat forever, polling every 12 seconds
+}
 
 
 
@@ -65,6 +83,9 @@ $(document).scroll(function(e){
 
 
 
+
+
+// video background
 function scaleToFill() {
     $('video.video-background').each(function(index, videoTag) {
        var $video = $(videoTag),
@@ -92,3 +113,27 @@ $(function () {
         scaleToFill();
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+(function() {
+
+var img = document.getElementByClassName('what_we_done_unit').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = 'auto';
+        img.width = '100%';
+    }
+};
+
+}());
