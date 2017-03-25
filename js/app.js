@@ -120,19 +120,13 @@ $(function () {
 
 
 
-
-
-
-
-
-
 (function() {
 
-var img = document.getElementByClassName('what_we_done_unit').firstChild;
+var img = document.getElementsByClassName('what_we_done_unit');
 img.onload = function() {
     if(img.height > img.width) {
-        img.height = 'auto';
         img.width = '100%';
+        img.height = 'auto';
     }
 };
 
