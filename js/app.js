@@ -146,8 +146,10 @@ img.onload = function() {
 
 document.addEventListener('DOMContentLoaded', function(){
     Typed.new('.element', {
-        strings: ["Optimized solutions", "Digital ideas" ],
+        strings: ["optimized solutions", "digital ideas", "alternative solutions" ],
         typeSpeed: 50,
-        backSpeed: 5
+        backSpeed: 5,
+        backDelay: 5000,
+        loop: true
     });
 });

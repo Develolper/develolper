@@ -121,14 +121,16 @@ img.icon {
 }
 
 .headline {
-    font-family: "GothamPro-light";
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 2.8em;
     color: #fff;
-    text-transform: uppercase;
+    /*thing to change*/
+    /*margin-top: 200px;*/
+    /*text-transform: uppercase;*/
 }
 
 .headline span {
-    color: #C0B283;
+    color: #4BBDAC;
     font-weight: bold;
 }
 
