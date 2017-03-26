@@ -68,13 +68,31 @@ function slide() {
     var num = 0 ;
     var videoSrc = [
         'video/quality_excellence/For_Wes.mp4', 'video/idea/pencil_down.mp4', 'video/1/Dancing-Bulbs.mp4', 'video/quality_excellence/Undo.mp4'
-    ]
-    window.setInterval(function () {
-        // increase by num 1, reset to 0 at 4
+    ];
+
+
+    (function me() {
         num = (num + 1) % 4;
+        console.log(num);
         $('video').attr('src', videoSrc[num]);
-    }, 12000); // repeat forever, polling every 12 seconds
+
+        setTimeout(me, 12000);
+    })();
 }
+
+
+
+
+// Typejs
+document.addEventListener('DOMContentLoaded', function(){
+    Typed.new('.element', {
+        strings: ["optimized solutions", "digital ideas", "alternative solutions" ],
+        typeSpeed: 50,
+        backSpeed: 5,
+        backDelay: 10000,
+        loop: true
+    });
+});
 
 
 
@@ -111,45 +129,5 @@ $(function () {
 
     $(window).resize(function() {
         scaleToFill();
-    });
-});
-
-
-
-
-
-
-// adjusting image to it's parent element by it's scale
-(function() {
-
-var img = document.getElementsByClassName('what_we_done_unit');
-img.onload = function() {
-    if(img.height > img.width) {
-        img.width = '100%';
-        img.height = 'auto';
-    }
-};
-
-}());
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function(){
-    Typed.new('.element', {
-        strings: ["optimized solutions", "digital ideas", "alternative solutions" ],
-        typeSpeed: 50,
-        backSpeed: 5,
-        backDelay: 5000,
-        loop: true
     });
 });
