@@ -64,8 +64,12 @@ a {
 }
 
 .navbar {
-    /*background-color:rgba(255,255,255,0);*/
     background: none;
+}
+
+.navbar.non-video {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .navbar.blur {
@@ -267,6 +271,34 @@ h3 strong {
 
 
 
+/*action button*/
+.actionButton {
+    width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 22px;
+    border: 1px solid #4BBDAC;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#buttonContainer a {
+    text-decoration: none;
+    color: #4BBDAC;
+    box-sizing: ;
+}
+
+#buttonContainer a:hover, .actionButton:hover {
+    background-color: #4BBDAC;
+    color: #fff;
+}
+/*action button*/
+
+
+
 .parallax {
     /* The image used */
     background-image: url("../images/2.jpg");
@@ -328,17 +360,20 @@ h3 strong {
 }
 
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+ .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-
+.text hr {
+    border: 1px solid #fff;
+}
 
 
 .team_member {
