@@ -255,8 +255,8 @@ h3 strong {
 
 .usp_boxes h6 {
     color: #555;
-    letter-spacing: -1px;
-    line-height: 20px;
+    /*letter-spacing: -1px;*/
+    line-height: 10px;
     margin: 0 0 10px 0
 }
 
