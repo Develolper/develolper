@@ -331,7 +331,7 @@ h3 strong {
 
 .what_we_done .row {
      position: relative;
-     max-height: 300px;
+     /*max-height: 300px;*/
 }
 
 
