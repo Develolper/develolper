@@ -65,6 +65,7 @@ a {
 
 .navbar {
     background: none;
+    z-index: 10000;
 }
 
 .navbar.non-video {
@@ -74,6 +75,9 @@ a {
 
 .navbar.blur {
     background-color: rgba(255,255,255,1);
+    -webkit-box-shadow: 0 4px 5px 0 rgba(204,204,204,.5);
+    -moz-box-shadow: 0 4px 5px 0 rgba(204,204,204,.5);
+    box-shadow: 0 4px 5px 0 rgba(204,204,204,.5);
 }
 
 #whiteLink {
@@ -295,7 +299,7 @@ h3 strong {
 #buttonContainer a {
     text-decoration: none;
     color: #4BBDAC;
-    box-sizing: ;
+    /*box-sizing: ;*/
 }
 
 #buttonContainer a:hover, .actionButton:hover {
@@ -326,7 +330,7 @@ h3 strong {
 
 
 .what_we_done .row {
-     position: relative,
+     position: relative;
      max-height: 300px;
 }
 
