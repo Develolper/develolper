@@ -53,7 +53,8 @@ a {
 
 
 .pattern {
-    background-image:url(../images/pattern_double_black.png);
+    /*background-image:url(../images/pattern_double_black.png);*/
+    background-image:url(../images/1px.png);
     background-repeat: repeat;
     background-attachment:scroll;
     width:100%;
