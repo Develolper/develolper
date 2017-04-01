@@ -87,7 +87,7 @@ function slide() {
 // Typejs
 document.addEventListener('DOMContentLoaded', function(){
     Typed.new('.element', {
-        strings: [ "realize digital ideas", "realize optimized solutions", "deliver projects on time", "perform with an excellence to satisfy you" ],
+        strings: [ "realize your digital ideas", "realize optimized solutions", "deliver projects on time", "perform with an excellence to satisfy you" ],
         typeSpeed: 50,
         backSpeed: 5,
         backDelay: 10000,

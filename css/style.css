@@ -481,8 +481,8 @@ footer .row {
     width: 100%;
 }
 
-footer strong {
-    color: #4ABDAC;
+footer .text-center {
+    margin-bottom: 0;
 }
 
 
@@ -666,6 +666,9 @@ ul.social-icons {
    padding:0 15px;
  }
 
+input {
+    width: 100%;
+}
  .mail-message{
    width: 100%;
    background:rgba(255,255,255, 0.8) !important;
@@ -778,4 +781,19 @@ center{
 input {
    position: relative;
    z-index: 9999;
+}
+
+
+
+.contact-right {
+    font-size: 25px;
+}
+
+.contact-right .right-content {
+    margin-top: -190px;
+}
+
+
+.right-content strong {
+    color: #4ABDAC;
 }
