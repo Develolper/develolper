@@ -66,8 +66,9 @@ window.onload = function start() {
 
 function slide() {
     var num = 0 ;
+    // starts with from index 1
     var videoSrc = [
-        'video/Dancing-Bulbs.mp4', 'video/quality_excellence/For_Wes.mp4', 'video/idea/pencil_down.mp4', 'video/quality_excellence/Undo.mp4'
+        'video/Happy-Street.mp4', 'video/Dancing-Bulbs.mp4', 'video/pencil_down.mp4', 'video/Undo.mp4',
     ];
 
 
@@ -86,7 +87,7 @@ function slide() {
 // Typejs
 document.addEventListener('DOMContentLoaded', function(){
     Typed.new('.element', {
-        strings: ["optimized solutions", "digital ideas", "deliver projects on time and meet your expectations", "perform with an excellence to satisfy you" ],
+        strings: [ "realize digital ideas", "realize optimized solutions", "deliver projects on time", "perform with an excellence to satisfy you" ],
         typeSpeed: 50,
         backSpeed: 5,
         backDelay: 10000,
