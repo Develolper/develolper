@@ -169,7 +169,7 @@ h3 strong {
 
 .arrow {
   position: fixed;
-  bottom: 0;
+  bottom: 100px;
   left: 50%;
   margin-left:-20px;
 }
