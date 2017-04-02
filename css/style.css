@@ -265,6 +265,9 @@ h3 strong {
     margin: 0 0 10px 0
 }
 
+.usp_boxes a {
+    color: #4BBDAC;
+}
 
 .usp_boxes img {
     margin: 15px 0;
@@ -475,6 +478,10 @@ h3 strong {
 /*footer*/
 footer {
     height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 auto;
 }
 
 footer .row {
@@ -483,6 +490,7 @@ footer .row {
 
 footer .text-center {
     margin-bottom: 0;
+
 }
 
 
