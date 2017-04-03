@@ -805,3 +805,39 @@ input {
 .right-content strong {
     color: #4ABDAC;
 }
+
+
+
+img.big_section_icon {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.article {
+    font-size: 19px;
+}
+
+
+.grey_font {
+    color: #555;
+}
+
+
+
+
+.blockquote {
+    background: url(../images/bg-quote2.png) no-repeat;
+    /*border-left: 1px solid #ccc;*/
+    color: #a5a4a4;
+    font-style:italic;
+    font-size: 45px;
+    margin: 30px;
+    margin-left: 0;
+    padding: 30px 30px 30px 50px;
+}
