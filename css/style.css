@@ -836,8 +836,34 @@ img.big_section_icon {
     /*border-left: 1px solid #ccc;*/
     color: #a5a4a4;
     font-style:italic;
-    font-size: 45px;
+    font-size: 30px;
     margin: 30px;
     margin-left: 0;
     padding: 30px 30px 30px 50px;
+}
+
+
+
+
+.table_technologies tr {
+    border: 1px solid #ECEEEF;
+}
+.table_technologies td {
+    border: 1px solid #ECEEEF;
+}
+
+
+.table_technologies ul {
+    list-style: none;
+}
+
+.table_technologies p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.table_technologies li::before {
+    content: "• ";
+    color: #4ABDAC; /* or whatever color you prefer */
 }

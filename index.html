@@ -512,5 +512,32 @@
 
     <script src="js/app.js"></script>
 
+
+
+    <!-- header scrolling -->
+    <script type="text/javascript">
+    $(document).scroll(function(e){
+        var scrollTop = $(document).scrollTop();
+        var screenHeight = $( window ).height();
+
+        if(scrollTop > screenHeight){
+
+            $(".arrow").attr("style","display: none");
+
+            $(".logo").attr("src","images/commentLogo.png");
+
+            $('.navbar').addClass('blur');
+
+            $(".nav-link").attr("id", "blackLink");
+
+        } else {
+            $(".arrow").attr("style","display: block");
+            $(".logo").attr("src","images/whiteLogo.png");
+            $('.navbar').removeClass('blur');
+            $(".nav-link").attr("id","whiteLink");
+        }
+    });
+    </script>
+
 </body>
 </html>
