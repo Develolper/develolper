@@ -164,6 +164,14 @@ h3 strong {
 }
 
 
+p.large_headline {
+    font-size: 2.7em;
+}
+
+.large_headline strong{
+    color: #4abdac;
+}
+
 
 /*bouncing down arrow*/
 
@@ -360,6 +368,7 @@ h3 strong {
     opacity: 0;
     transition: .5s ease;
     background-color: #4ABDAC;
+    
 }
 
 .overlayBrandName a{
@@ -383,7 +392,8 @@ h3 strong {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-align: center;
+
+    /*text-align: center;*/
 }
 
 .text hr {
@@ -836,7 +846,7 @@ img.big_section_icon {
     /*border-left: 1px solid #ccc;*/
     color: #a5a4a4;
     font-style:italic;
-    font-size: 30px;
+    font-size: 21px;
     margin: 30px;
     margin-left: 0;
     padding: 30px 30px 30px 50px;
