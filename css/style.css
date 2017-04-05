@@ -368,7 +368,8 @@ p.large_headline {
     opacity: 0;
     transition: .5s ease;
     background-color: #4ABDAC;
-    
+
+    /*border: 1px solid black;*/
 }
 
 .overlayBrandName a{
@@ -384,10 +385,11 @@ p.large_headline {
 }
 
 
- .text {
+ .portfolio_unit_description {
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     position: absolute;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -396,10 +398,24 @@ p.large_headline {
     /*text-align: center;*/
 }
 
-.text hr {
+
+
+
+.portfolio_unit_description hr {
     border: 1px solid #fff;
 }
 
+
+
+.job_description {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 
 .team_member {
     background: #fff;
