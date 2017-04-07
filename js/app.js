@@ -28,7 +28,10 @@ $(document).ready(function(){
 
 
 
-
+// Animate On Scroll Library
+// AOS.init({
+//   duration: 1200,
+// })
 
 
 
