@@ -821,10 +821,13 @@ input {
 
 .contact-right {
     font-size: 25px;
+    /*border: 1px solid black;*/
 }
 
 .contact-right .right-content {
-    margin-top: -190px;
+    margin-bottom: 220px;
+    margin-top: 30px;
+    /*border: 1px solid black;*/
 }
 
 
