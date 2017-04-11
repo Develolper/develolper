@@ -21,7 +21,7 @@ if (isset($_POST)) {
       ->setTo(array('sabir.gojayev007@gmail.com', 'gasanello@gmail.com'))
       ->setBody('New order by: '.$name.'<br /> Contact e-mail: '.$mail.'<br /> Message: '.$message);
     $result = $mailer->send($message);
-
+}
 ?>
 
 
