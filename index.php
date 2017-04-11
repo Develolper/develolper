@@ -505,11 +505,7 @@ if (isset($_POST)) {
                         <!-- Clear -->
                         <div class="clear"></div>
 
-                        <!-- reCAPTCHA  -->
-                        <button class="g-recaptcha" data-sitekey="6Le7DBwUAAAAAHSA36RdDzTw0EPQBPPQg8HadeDy" data-callback="YourOnSubmitFn">
-                            Submit
-                            <!-- https://www.google.com/recaptcha/admin#site/337382587?setup -->
-                        </button>
+                        
                     </form>
 
                     <!-- Your Mail Message -->
