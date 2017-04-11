@@ -1,11 +1,14 @@
 <?php
-echo $_SERVER['DOCUMENT_ROOT'] . '/swiftmailer/lib/swift_required.php';
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/swiftmailer/lib/swift_required.php';
 if (isset($_POST)) {
     $name = htmlspecialchars($_POST['name']);
     $mail = htmlspecialchars($_POST['mail']);
     $message = htmlspecialchars($_POST['message']);
-    $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465,'ssl')
+
+    $smtp_host_ip = gethostbyname('smtp.gmail.com');
+
+    $transport = Swift_SmtpTransport::newInstance( $smtp_host_ip, 465,'ssl')
       ->setUsername('develolper.info@gmail.com')
       ->setPassword('develolper_info');
     $mailer = Swift_Mailer::newInstance($transport);
@@ -479,7 +482,7 @@ if (isset($_POST)) {
                 <!-- Form Area -->
                 <div class="contact-form">
                     <!-- Form -->
-                    <form id="contact-us" method="post" action="#">
+                    <form id="contact-us" method="post">
                         <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
                             <!-- Name -->
                             <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
