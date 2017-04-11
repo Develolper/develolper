@@ -8,7 +8,7 @@ if (isset($_POST)) {
 
     $smtp_host_ip = gethostbyname('smtp.gmail.com');
 
-    $transport = Swift_SmtpTransport::newInstance( $smtp_host_ip, 465,'ssl')
+    $transport = Swift_SmtpTransport::newInstance( $smtp_host_ip, 587,'tls')
       ->setUsername('develolper.info@gmail.com')
       ->setPassword('develolper_info');
     $mailer = Swift_Mailer::newInstance($transport);
