@@ -6,7 +6,7 @@ if (isset($_POST)) {
     $mail = htmlspecialchars($_POST['mail']);
     $message = htmlspecialchars($_POST['message']);
 
-    $smtp_host_ip = gethostbyname(173.194.65.108);
+    $smtp_host_ip = gethostbyname( "173.194.65.108" );
 
     $transport = Swift_SmtpTransport::newInstance( $smtp_host_ip, 587,'tls')
       ->setUsername('develolper.info@gmail.com')
