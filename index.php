@@ -1,5 +1,5 @@
 <?php
-require_once '/swiftmailer/lib/swift_required.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/swiftmailer/lib/swift_required.php';
 if (isset($_POST)) {
     $name = htmlspecialchars($_POST['name']);
     $mail = htmlspecialchars($_POST['mail']);
