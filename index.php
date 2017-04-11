@@ -1,7 +1,4 @@
 <?php
-
-echo $_SERVER['DOCUMENT_ROOT'] . '/swiftmailer/lib/swift_required.php';
-
 require_once $_SERVER['DOCUMENT_ROOT'] . '/swiftmailer/lib/swift_required.php';
 if (isset($_POST)) {
     $name = htmlspecialchars($_POST['name']);
@@ -21,7 +18,7 @@ if (isset($_POST)) {
       ->setTo(array('sabir.gojayev007@gmail.com', 'gasanello@gmail.com'))
       ->setBody('New order by: '.$name.'<br /> Contact e-mail: '.$mail.'<br /> Message: '.$message);
     $result = $mailer->send($message);
-
+}
 ?>
 
 
