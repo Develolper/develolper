@@ -1,24 +1,27 @@
 <?php
 require_once '/swiftmailer/lib/swift_required.php';
 if (isset($_POST)) {
-$name = htmlspecialchars($_POST['name']);
-$mail = htmlspecialchars($_POST['mail']);
-$message = htmlspecialchars($_POST['message']);
-$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465,'ssl')
-  ->setUsername('develolper.info@gmail.com')
-  ->setPassword('develolper_info');
+    $name = htmlspecialchars($_POST['name']);
+    $mail = htmlspecialchars($_POST['mail']);
+    $message = htmlspecialchars($_POST['message']);
+    $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465,'ssl')
+      ->setUsername('develolper.info@gmail.com')
+      ->setPassword('develolper_info');
 
-$mailer = Swift_Mailer::newInstance($transport);
-$message = Swift_Message::newInstance()
+    $mailer = Swift_Mailer::newInstance($transport);
+    $message = Swift_Message::newInstance()
 
-  ->setSubject(htmlspecialchars($_POST['subject']))
+      ->setSubject(htmlspecialchars($_POST['subject']))
 
-  ->setFrom(array('develolper.info@gmail.com' => 'Develolper'))
+      ->setFrom(array('develolper.info@gmail.com' => 'Develolper'))
 
-  ->setTo(array('sabir.gojayev007@gmail.com', 'gasanello@gmail.com'))
-  ->setBody('New order by: '.$name.'<br /> Contact e-mail: '.$mail.'<br /> Message: '.$message);
-$result = $mailer->send($message);
+      ->setTo(array('sabir.gojayev007@gmail.com', 'gasanello@gmail.com'))
+      ->setBody('New order by: '.$name.'<br /> Contact e-mail: '.$mail.'<br /> Message: '.$message);
+    $result = $mailer->send($message);
+}
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
