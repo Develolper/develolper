@@ -60,7 +60,7 @@ if (isset($_POST)) {
 
 
     <!-- reCAPTCHA  -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 
 </head>
 
@@ -505,7 +505,7 @@ if (isset($_POST)) {
                         <!-- Clear -->
                         <div class="clear"></div>
 
-                        
+
                     </form>
 
                     <!-- Your Mail Message -->
