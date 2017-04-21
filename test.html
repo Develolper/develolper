@@ -4,59 +4,173 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:image" content="http://develolper.com/images/commentLogo.png" />
+    <meta property="og:description" content="Our highly experienced in house team of experts is dedicated to build excellent products for any industry. We follow transparent processes which helps us achieve high quality & result driven solutions for our Clients. We work on a wide range of technologies ranging from open source to proprietary and custom built solutions. We are committed to building solutions that realize your digital ideas." />
+    <meta property="og:url"content="http://develolper.com/" />
+
+    <meta property="og:title" content="Develolper" />
+
+    <title>Develolper</title>
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
     <!-- Animate On Scroll Library -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
 
+    <!-- reCAPTCHA  -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 
     <style>
-    * {
-      box-sizing: border-box;
-    }
+        #container {
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+          height: 100vh;
+        }
 
-    .item {
-      width: 200px;
-      height: 200px;
-      margin: 50px auto;
-      padding-top: 75px;
-      background: #ccc;
-      text-align: center;
-      color: #FFF;
-      font-size: 3em;
-    }
+        video {
+          position: absolute;
+
+          /* Vertical and Horizontal center*/
+          left: 50%; top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        #video_cover {
+          position: absolute;
+          width: 100%; height: 100%;
+          background: url('video/Dancing-Bulbs.jpg') no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0; right: 0; left: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+
+
+        #main_content {
+             z-index: 2;
+             position: relative;
+             display: inline-block;
+           }
+
 
     </style>
+
 </head>
 
 
 <body>
 
-    <div class="item" data-aos="fade-up">1</div>
-    <div class="item" data-aos="fade-down">2</div>
-    <div class="item" data-aos="fade-right">3</div>  
-    <div class="item" data-aos="fade-left">4</div>
-
-    <div class="item" data-aos="zoom-in">5</div>
-    <div class="item" data-aos="zoom-out">6</div>
-
-    <div class="item" data-aos="slide-up">7</div>
-
-    <div class="item" data-aos="flip-up">8</div>
-    <div class="item" data-aos="flip-down">9</div>
-    <div class="item" data-aos="flip-right">10</div>
-    <div class="item" data-aos="flip-left">11</div>
+    <div id="container">
 
 
 
-    <!-- Animate On Scroll Library -->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <div id="video_cover"></div>
+
+        <video autoplay muted loop >
+            <source src="video/video_bg.mp4" type="video/mp4" />
+            <source src="video/pencil_down.mp4" type="video/mp4" />
+            <source src="video/Undo.mp4" type="video/mp4" />
+            <source src="video/Happy-Street.mp4" type="video/mp4" />
+            <!-- <source src="video/Happy-Street.mp4" type="video/mp4" /> -->
+        </video>
+
+
+        <div id="overlay"></div>
+
+        <section id="main_content">
+          hello
+        </section>
+
+        <!-- <p style="z-index: 2"> -->
+
+        </p>
+
+
+    </div>
 
 
     <script>
-    AOS.init({
-duration: 1200
-});
-    </script>
+
+    var video = document.querySelector('video')
+  , container = document.querySelector('#container');
+
+var setVideoDimensions = function () {
+  // Video's intrinsic dimensions
+  var w = video.videoWidth
+    , h = video.videoHeight;
+
+  // Intrinsic Ratio
+  // Will be more than 1 if W > H and less if W < H
+  var videoRatio = (w / h).toFixed(2);
+
+  // Get the container's computed styles
+  //
+  // Also calculate the min dimensions required (this will be
+  // the container dimentions)
+  var containerStyles = window.getComputedStyle(container)
+    , minW = parseInt( containerStyles.getPropertyValue('width') )
+    , minH = parseInt( containerStyles.getPropertyValue('height') );
+
+  // What's the min:intrinsic dimensions
+  //
+  // The idea is to get which of the container dimension
+  // has a higher value when compared with the equivalents
+  // of the video. Imagine a 1200x700 container and
+  // 1000x500 video. Then in order to find the right balance
+  // and do minimum scaling, we have to find the dimension
+  // with higher ratio.
+  //
+  // Ex: 1200/1000 = 1.2 and 700/500 = 1.4 - So it is best to
+  // scale 500 to 700 and then calculate what should be the
+  // right width. If we scale 1000 to 1200 then the height
+  // will become 600 proportionately.
+  var widthRatio = minW / w
+    , heightRatio = minH / h;
+
+  // Whichever ratio is more, the scaling
+  // has to be done over that dimension
+  if (widthRatio > heightRatio) {
+    var newWidth = minW;
+    var newHeight = Math.ceil( newWidth / videoRatio );
+  }
+  else {
+    var newHeight = minH;
+    var newWidth = Math.ceil( newHeight * videoRatio );
+  }
+
+  video.style.width = newWidth + 'px';
+  video.style.height = newHeight + 'px';
+};
+
+video.addEventListener('loadedmetadata', setVideoDimensions, false);
+window.addEventListener('resize', setVideoDimensions, false);
+
+</script>
 
 </body>
 </html>

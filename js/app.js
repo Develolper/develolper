@@ -37,36 +37,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-// auto changing bg videos after 12 seconds
-window.onload = function start() {
-    slide();
-}
-
-function slide() {
-    var num = 0 ;
-    // starts with from index 1
-    var videoSrc = [
-        'video/Happy-Street.mp4', 'video/Dancing-Bulbs.mp4', 'video/pencil_down.mp4', 'video/Undo.mp4',
-    ];
-
-
-    (function me() {
-        num = (num + 1) % 4;
-        console.log(num);
-        $('video').attr('src', videoSrc[num]);
-
-        setTimeout(me, 12000);
-    })();
-}
-
-
-
-
 // Typejs
 document.addEventListener('DOMContentLoaded', function(){
     Typed.new('.element', {
@@ -87,31 +57,56 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-// video background
-function scaleToFill() {
-    $('video.video-background').each(function(index, videoTag) {
-       var $video = $(videoTag),
-           videoRatio = videoTag.videoWidth / videoTag.videoHeight,
-           tagRatio = $video.width() / $video.height(),
-           val;
+var video = document.querySelector('video')
+, container = document.querySelector('#container');
 
-       if (videoRatio < tagRatio) {
-           val = tagRatio / videoRatio * 1.02; <!-- size increased by 2% because value is not fine enough and sometimes leaves a couple of white pixels at the edges -->
-       } else if (tagRatio < videoRatio) {
-           val = videoRatio / tagRatio * 1.02;
-       }
+var setVideoDimensions = function () {
+// Video's intrinsic dimensions
+var w = video.videoWidth
+, h = video.videoHeight;
 
-       $video.css('transform','scale(' + val  + ',' + val + ')');
+// Intrinsic Ratio
+// Will be more than 1 if W > H and less if W < H
+var videoRatio = (w / h).toFixed(2);
 
-    });
+// Get the container's computed styles
+//
+// Also calculate the min dimensions required (this will be
+// the container dimentions)
+var containerStyles = window.getComputedStyle(container)
+, minW = parseInt( containerStyles.getPropertyValue('width') )
+, minH = parseInt( containerStyles.getPropertyValue('height') );
+
+// What's the min:intrinsic dimensions
+//
+// The idea is to get which of the container dimension
+// has a higher value when compared with the equivalents
+// of the video. Imagine a 1200x700 container and
+// 1000x500 video. Then in order to find the right balance
+// and do minimum scaling, we have to find the dimension
+// with higher ratio.
+//
+// Ex: 1200/1000 = 1.2 and 700/500 = 1.4 - So it is best to
+// scale 500 to 700 and then calculate what should be the
+// right width. If we scale 1000 to 1200 then the height
+// will become 600 proportionately.
+var widthRatio = minW / w
+, heightRatio = minH / h;
+
+// Whichever ratio is more, the scaling
+// has to be done over that dimension
+if (widthRatio > heightRatio) {
+var newWidth = minW;
+var newHeight = Math.ceil( newWidth / videoRatio );
+}
+else {
+var newHeight = minH;
+var newWidth = Math.ceil( newHeight * videoRatio );
 }
 
-$(function () {
-    scaleToFill();
+video.style.width = newWidth + 'px';
+video.style.height = newHeight + 'px';
+};
 
-    $('.video-background').on('loadeddata', scaleToFill);
-
-    $(window).resize(function() {
-        scaleToFill();
-    });
-});
+video.addEventListener('loadedmetadata', setVideoDimensions, false);
+window.addEventListener('resize', setVideoDimensions, false);
