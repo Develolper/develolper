@@ -121,11 +121,10 @@ img.icon {
 }
 
 .headline {
-
     z-index: 2;
     position: relative;
     display: inline-block;
-    
+
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 2.8em;
     color: #fff;
@@ -528,6 +527,7 @@ footer .text-center {
 .social-icon {
     color: #555;
     font-size: 2em;
+    margin-right: 15px;
 }
 ul.social-icons {
     margin-top: 10px;
@@ -821,21 +821,16 @@ input {
 
 
 
-.contact-right {
-    font-size: 25px;
-    /*border: 1px solid black;*/
-}
 
-.contact-right .right-content {
-    margin-bottom: 220px;
-    margin-top: 30px;
-    /*border: 1px solid black;*/
-}
-
-
-.right-content strong {
+.text-center strong {
     color: #4ABDAC;
 }
+
+
+.text-center.contactBlock {
+    font-size: 25px;
+}
+
 
 
 
