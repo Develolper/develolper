@@ -341,7 +341,11 @@ p.large_headline {
      /*max-height: 300px;*/
 }
 
+.what_we_done_unit {
+    overflow-y: auto;
 
+    border: 1px solid #00f;
+}
 
 .what_we_done_unit img {
     margin-left: auto;
@@ -358,13 +362,14 @@ p.large_headline {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    /*height: 100%;
+    width: 100%;*/
     opacity: 0;
     transition: .5s ease;
     background-color: #4ABDAC;
 
-    /*border: 1px solid black;*/
+    overflow-y: auto;
+    border: 1px solid #000;
 }
 
 .overlayBrandName a{
@@ -381,7 +386,7 @@ p.large_headline {
 
 
  .portfolio_unit_description {
-    color: white;
+    /*color: white;
     font-size: 17px;
     position: absolute;
     width: 80%;
@@ -390,7 +395,21 @@ p.large_headline {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 
-    /*text-align: center;*/
+    border: 1px solid #f00;*/
+
+
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    margin: auto;
+    top: -80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 3px;
+    padding: 10px;
 }
 
 
@@ -486,7 +505,7 @@ video {
 #video_cover {
   position: absolute;
   width: 100%; height: 100%;
-  background: url('video/Dancing-Bulbs.jpg') no-repeat;
+  background: url('../video/Dancing-Bulbs.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
