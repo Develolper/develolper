@@ -1,5 +1,7 @@
 <?
 require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
+
+echo $_SERVER['DOCUMENT_ROOT'] . '/head.php';
 ?>
 <body>
 
