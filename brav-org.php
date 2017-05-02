@@ -16,7 +16,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
             <div class="navbar-collapse collapse" id="navbar9">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" id="blackLink" href="#whatWeProvide">About</a>
+                        <a class="nav-link" id="blackLink" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
