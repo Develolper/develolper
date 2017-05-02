@@ -46,7 +46,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                 </h3>
             </div>
             <div class="text-center">
-                To create a website which must be available on any device for patiences in order to bring medicine service a little bit closer and provide instant aid.
+                To design website for Shah restaurant which welcomes all the lovers of the Azerbaijani national cuisine.
             </div>
 
             <div class="top-buffer"></div>
@@ -57,8 +57,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                 </h3>
             </div>
             <div class="text-center">
-                We have created an interactive and catchy website where customers could view information about services that are provided. Furthermore, in order to visit doctor each person can schedule an appointment online. Responsive website was created in very short time.
-
+                Upon visiting shah.az, you will be able to travel to the unforgettable world of colourful and delicious cuisine of Azerbaijan.
             </div>
 
             <div class="top-buffer"></div>

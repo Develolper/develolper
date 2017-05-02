@@ -245,17 +245,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
 
             </div>
             <div class="col-md-6" >
-                <!-- <div class="what_we_done_unit" >
-                    <img src="images/what_we_done/shah.png" />
-                    <div class="overlayBrandName">
-                        <div class="portfolio_unit_description">
-                            <p style="text-align: center;">Shah.az</p>
-                            <hr />
-                            Creating graphic interface for restaurant with Azerbaijani national kitchen, where design will carry you to Safavids dynasty era
-                        </div>
-                    </div>
-                </div> -->
-
                 <div class="grid">
                     <figure class="effect-lily">
                         <img src="images/what_we_done/shah.png" alt="img06"/>
