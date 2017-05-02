@@ -168,6 +168,8 @@ p.large_headline {
 }
 
 
+
+
 /*bouncing down arrow*/
 
 .arrow {
@@ -343,8 +345,6 @@ p.large_headline {
 
 .what_we_done_unit {
     overflow-y: auto;
-
-    border: 1px solid #00f;
 }
 
 .what_we_done_unit img {
@@ -358,18 +358,20 @@ p.large_headline {
 
  .overlayBrandName {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
+    /*margin-bottom: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    /*height: 100%;
-    width: 100%;*/
+    right: 0;*/
+    min-height: 100%;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #4ABDAC;
 
-    overflow-y: auto;
-    border: 1px solid #000;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+
 }
 
 .overlayBrandName a{
@@ -386,18 +388,6 @@ p.large_headline {
 
 
  .portfolio_unit_description {
-    /*color: white;
-    font-size: 17px;
-    position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-
-    border: 1px solid #f00;*/
-
-
     position: absolute;
     color: white;
     font-size: 17px;
@@ -911,4 +901,101 @@ img.big_section_icon {
 .table_technologies li::before {
     content: "• ";
     color: #4ABDAC; /* or whatever color you prefer */
+}
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-bg-brav {
+    background: url('/../images/what_we_done/brav-head.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    position: relative;
+    width: 100%;
+    min-height: 15em;
+}
+
+.portfolio-bg-sahhat {
+    background: url('/../images/what_we_done/sahhat-head.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    position: relative;
+    width: 100%;
+    min-height: 15em;
+}
+
+.portfolio-bg-shah {
+    background: url('/../images/what_we_done/shah-head.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    position: relative;
+    width: 100%;
+    min-height: 15em;
+}
+
+.portfolio-bg-fabrick {
+    background: url('/../images/what_we_done/fabrick-head.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    position: relative;
+    width: 100%;
+    min-height: 15em;
+}
+
+.portfolio-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+}
+
+.portfolio-header p {
+    color: #fff;
+}
+
+.portfolio-content-images {
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-content-images img {
+    margin: 0;
+    padding: 0;
+}
+
+img.portfolio-logo {
+    position: relative;
+    margin-left: 15%;
+    max-width: 70%;
+}
+
+
+
+
+img.screen-top {
+    margin-bottom: -5px;
+}
+
+img.screen-bot {
+    margin-top: -21px;
 }

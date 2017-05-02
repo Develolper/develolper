@@ -28,15 +28,6 @@ $(document).ready(function(){
 
 
 
-// Animate On Scroll Library
-// AOS.init({
-//   duration: 1200,
-// })
-
-
-
-
-
 // Typejs
 document.addEventListener('DOMContentLoaded', function(){
     Typed.new('.element', {
