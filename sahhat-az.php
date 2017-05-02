@@ -69,9 +69,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                 <img src="\images\what_we_done\screen_bot.png" class="img-responsive screen-bot" />
 
                 <div class="top-buffer"></div>
-                <!-- <img src="\images\what_we_done\screen_top.png" class="img-responsive screen-top" style="margin-bottom: -5px;"/>
+                <img src="\images\what_we_done\screen_top.png" class="img-responsive screen-top" style="margin-bottom: -5px;"/>
                 <img src="\images\what_we_done\sahhat-2.png" class="img-responsive" alt="Chat platform for Brav. Develolper" />
-                <img src="\images\what_we_done\screen_bot.png" class="img-responsive screen-bot"/> -->
+                <img src="\images\what_we_done\screen_bot.png" class="img-responsive screen-bot"/>
             </div>
         </div>
 
