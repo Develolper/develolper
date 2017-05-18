@@ -845,6 +845,8 @@ input {
 
 img.big_section_icon {
     width: 100%;
+
+    margin-top: -30px;
 }
 
 
@@ -871,7 +873,7 @@ img.big_section_icon {
     /*border-left: 1px solid #ccc;*/
     color: #a5a4a4;
     font-style:italic;
-    font-size: 21px;
+    font-size: 27px;
     margin: 30px;
     margin-left: 0;
     padding: 30px 30px 30px 50px;

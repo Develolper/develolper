@@ -96,7 +96,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
 
             <div class="col align-self-center text-center">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="usp_boxes" data-aos="zoom-out">
                             <img src="images/creative.png" />
                             <h5>User Experience Strategy</h5>
@@ -104,14 +104,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                             <h6>Seamless Design Process</h6>
                             <h6>Mobile friendly</h6>
 
-                            <a href="./services.php#userexperience">
+                            <a href="./user-experience.php">
                                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                 Learn More
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="usp_boxes" data-aos="zoom-out">
                             <img src="images/web_development.png" />
                             <h5>Web Development</h5>
@@ -119,29 +119,29 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                             <h6>Mobile Website Development</h6>
                             <h6>Responsive design</h6>
 
-                            <a href="./services.php#webdevelopment">
+                            <a href="./web-development.php">
                                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                 Learn More
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="usp_boxes" data-aos="zoom-out">
-                            <img src="images/production.png" />
-                            <h5>CMS Development</h5>
-                            <h6>WordPress </h6>
-                            <h6>Joomla </h6>
-                            <h6>Custom CMS</h6>
+                            <img src="images/branding.png" />
+                            <h5>Branding</h5>
+                            <h6>Brand Research </h6>
+                            <h6>Brand Development </h6>
+                            <h6>SEO</h6>
 
-                            <a href="./services.php#cmsdevelopment">
+                            <a href="/branding.php">
                                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                                 Learn More
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="usp_boxes" data-aos="zoom-out">
                             <img src="images/e-commerce.jpg" />
                             <h5>E-Commerce</h5>
@@ -154,7 +154,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                                 Learn More
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -313,18 +313,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                     </div>
                 </div>
 
-
                 <div class="col-md-3"  data-aos="zoom-out">
                     <div class="team_member">
                         <div class="team_member_picture">
-                            <img src="images/abbas.jpg" />
+                            <img src="images/shamil.png" />
 
                             <div class="overlay">
-                                <div class="job_description">Backend & Android developer</div>
+                                <div class="job_description">Marketing Manager</div>
                             </div>
                         </div>
                         <p class="name">
-                            Abbas Akhundov
+                            Shamil Bayramov
                         </p>
 
                     </div>
@@ -366,6 +365,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                     </div>
                 </div>
 
+                <div class="col-md-3"  data-aos="zoom-out">
+                    <div class="team_member">
+                        <div class="team_member_picture">
+                            <img src="images/abbas.jpg" />
+
+                            <div class="overlay">
+                                <div class="job_description">Backend & Android developer</div>
+                            </div>
+                        </div>
+                        <p class="name">
+                            Abbas Akhundov
+                        </p>
+
+                    </div>
+                </div>
 
                 <div class="col-md-3"  data-aos="zoom-out">
                     <div class="team_member">
@@ -399,6 +413,28 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                 </div>
 
             </div> <!-- row justify-content-ar -->
+
+
+            <div class="row justify-content-around" >
+
+                <div class="col-md-3"  data-aos="zoom-out">
+                    <div class="team_member">
+                        <div class="team_member_picture">
+                            <img src="images/ceyhun.png" />
+
+                            <div class="overlay">
+                                <div class="job_description">Web Desing & Video Montage</div>
+                            </div>
+                        </div>
+                        <p class="name">
+                            Jeyhun Qubakhanov
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- row justify-content-ar -->
+
+
         </div> <!-- container -->
     </div> <!-- grey bg -->
 
