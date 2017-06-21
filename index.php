@@ -423,7 +423,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/head.php';
                             <img src="images/ceyhun.png" />
 
                             <div class="overlay">
-                                <div class="job_description">Web Desing & Video Montage</div>
+                                <div class="job_description">Web Design & Video Montage</div>
                             </div>
                         </div>
                         <p class="name">
